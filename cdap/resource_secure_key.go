@@ -60,10 +60,10 @@ func resourceSecureKey() *schema.Resource {
 			},
 			"properties": {
 				Type:        schema.TypeMap,
-				Description: "Additional key/value pairs that can be attached to the secure key."
+				Description: "Additional key/value pairs that can be attached to the secure key.",
 				Required:    false,
 				ForceNew:    false,
-			}
+			},
 		},
 	}
 }
