@@ -52,6 +52,7 @@ func Provider() *schema.Provider {
 			"cdap_namespace":             resourceNamespace(),
 			"cdap_namespace_preferences": resourceNamespacePreferences(),
 			"cdap_profile":               resourceProfile(),
+			"cdap_secure_key":            resourceSecureKey(),
 		},
 	}
 }
