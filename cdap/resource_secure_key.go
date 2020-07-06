@@ -35,13 +35,13 @@ func resourceSecureKey() *schema.Resource {
 				Type:        schema.TypeString,
 				Description: "The secret to be secured.",
 				Required:    true,
-				ForceNew:    false,
+				ForceNew:    true,
 			},
 			"description": {
 				Type:        schema.TypeString,
 				Description: "The description of the secure key.",
 				Required:    false,
-				ForceNew:    false,
+				ForceNew:    true,
 			},
 			"namespace": {
 				Type:        schema.TypeString,
@@ -62,7 +62,7 @@ func resourceSecureKey() *schema.Resource {
 				Type:        schema.TypeMap,
 				Description: "Additional key/value pairs that can be attached to the secure key.",
 				Required:    false,
-				ForceNew:    false,
+				ForceNew:    true,
 			},
 		},
 	}
