@@ -40,7 +40,7 @@ func resourceSecureKey() *schema.Resource {
 			"description": {
 				Type:        schema.TypeString,
 				Description: "The description of the secure key.",
-				Required:    false,
+				Option:      true,
 				ForceNew:    true,
 			},
 			"namespace": {
